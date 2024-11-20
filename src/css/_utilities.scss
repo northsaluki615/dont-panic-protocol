@@ -1,4 +1,5 @@
 @use "theme" as *;
+@use "./_theme.scss" as theme;
 
 .tdbc-content-maxlength {
   max-width: 80ch;
@@ -67,3 +68,11 @@ $tdbc-alignments: left, center, right !default;
 .tdbc-mb-none {
   margin-bottom: 0;
 }
+// Background Colors
+.bg-rose { background-color: map-get($rose, DEFAULT); }
+
+.bg-fandango { background-color: map-get($fandango, DEFAULT); }
+
+// Text Colors
+.text-rose { color: map-get($rose, DEFAULT); }
+.text-fandango { color: map-get($fandango, DEFAULT); }

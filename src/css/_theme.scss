@@ -51,3 +51,57 @@ $tdbc-spacing: (
   xl: 10rem,
   auto: "auto",
 ) !default;
+// Color Palette
+$rose: (
+  DEFAULT: #f72585,
+  100: #37021a,
+  200: #6e0434,
+  300: #a5064e,
+  400: #dc0868,
+  500: #f72585,
+  600: #f9529d,
+  700: #fa7db5,
+  800: #fca8ce,
+  900: #fdd4e6
+);
+$fandango: (
+  DEFAULT: #b5179e,
+  100: #24051f,
+  200: #48093f,
+  300: #6c0e5e,
+  400: #90137e,
+  500: #b5179e,
+  600: #e326c7,
+  700: #ea5dd5,
+  800: #f193e3,
+  900: #f8c9f1
+);
+$zaffre: (
+  DEFAULT: #3a0ca3,
+  100: #0b0220,
+  200: #170541,
+  300: #220761,
+  400: #2e0a81,
+  500: #3a0ca3,
+  600: #4f11e0,
+  700: #7743f1,
+  800: #a582f6,
+  900: #d2c0fa
+);
+$chefchaouen_blue: (
+  DEFAULT: #4895ef,
+  100: #051d39,
+  200: #0a3b72,
+  300: #0f58ac,
+  400: #1475e5,
+  500: #4895ef,
+  600: #6dabf2,
+  700: #91c0f5,
+  800: #b6d5f9,
+  900: #daeafc
+);
+
+
+// Example usage
+$primary-color: map-get($rose, DEFAULT);
+$secondary-color: map-get($fandango, DEFAULT);

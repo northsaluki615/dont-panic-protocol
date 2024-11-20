@@ -7,3 +7,8 @@
 @use "card";
 @use "prism";
 @use "utilities";
+@use "./_theme.scss" as theme;
+
+// Primary Colors
+$primary: map-get(theme.$rose, DEFAULT);
+$secondary: map-get(theme.$fandango, DEFAULT);

@@ -5,5 +5,4 @@ module.exports = {
   siteDescription:
     "A Cybersecurity Framework for the rest of us.",
   authorName: "Michael Helmers",
-  //twitterUsername: "5t3ph", // no `@`
 };

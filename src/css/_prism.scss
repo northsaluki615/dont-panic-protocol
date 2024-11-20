@@ -1,4 +1,5 @@
 @use "theme" as *;
+@use "./_theme.scss" as theme;
 
 /**
  * a11y-dark theme for JavaScript, CSS, and HTML
@@ -158,4 +159,9 @@ pre[class*="language-"] {
   .token.url {
     font-weight: normal;
   }
+}
+
+code {
+  color: map-get(theme.$zaffre, 500);
+  background-color: map-get(theme.$chefchaouen_blue, 100);
 }

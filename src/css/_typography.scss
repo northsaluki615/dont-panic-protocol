@@ -1,4 +1,5 @@
 @use "theme" as *;
+@use "./_theme.scss" as theme;
 
 $tdbc-typography-variants: h1, h2, h3, h4;
 
@@ -119,4 +120,12 @@ blockquote {
 .tdbc-list-unstyled {
   list-style: none;
   padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: map-get($rose, 500);
+}
+
+p {
+  color: map-get($fandango, 400);
 }
