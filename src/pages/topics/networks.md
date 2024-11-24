@@ -70,7 +70,8 @@ Securing your network not only protects your devices but also safeguards your pe
   - [Fing](https://www.fing.com)  
 - **VPN Recommendations**:  
   - [NordVPN](https://nordvpn.com)  
-  - [ExpressVPN](https://www.expressvpn.com)  
+  - [ExpressVPN](https://www.expressvpn.com)
+  - [ProtonVPN](https://protonvpn.com)
 
 ---
 
