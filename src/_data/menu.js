@@ -4,5 +4,6 @@ module.exports = [
     { title: "📚 Glossary", url: "/glossary/" },
     { title: "📖 About", url: "/about/" },
     { title: "❓ FAQ", url: "/faq/" },
+    { title: "📋 Checklist", url: "/checklist/" },
   ];
   
