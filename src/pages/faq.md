@@ -1,9 +1,9 @@
 ---
-title: "📋 Frequently Asked Questions"
+title: "❓ FAQ"
 description: "What's going on here? 🤔"
 ---
 
-## FAQ: Don’t Panic Protocol
+## Frequently Asked Questions: Don’t Panic Protocol
 
 ### 1. **What is the Don’t Panic Protocol?** 🛡️
 

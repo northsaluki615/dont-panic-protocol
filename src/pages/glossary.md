@@ -1,76 +1,169 @@
 ---
-title: "📖 Glossary"
+title: "📚 Glossary"
 description: "What are you saying? 🤔"
 ---
 
-**🔑 Authentication**  
-The process of verifying the identity of a user or device before allowing access to a system. Authentication methods include passwords, biometrics, and multifactor authentication.  
-[Learn more on Wikipedia](https://en.wikipedia.org/wiki/Authentication)
+Understanding cybersecurity starts with mastering the language. Here's your guide to common terms and concepts, explained simply and paired with practical tips.  
 
-**🧬 Biometrics**  
-Technologies that identify individuals based on unique physical characteristics, such as fingerprints or facial recognition, often used as a form of authentication.  
-[Learn more on Wikipedia](https://en.wikipedia.org/wiki/Biometrics)
+---
 
-**🛡️ Cybersecurity**  
-The practice of protecting systems, networks, and programs from digital attacks that seek to access, change, or destroy sensitive information.  
-[Learn more on Wikipedia](https://en.wikipedia.org/wiki/Computer_security)
+### 🔑 **Authentication**  
 
-**👣 Digital Footprint**  
-A record of a person's online activities, such as social media, online shopping, and browsing history. Understanding and managing your digital footprint is essential for privacy and security.  
-[Learn more on Wikipedia](https://en.wikipedia.org/wiki/Digital_footprint)
+The process of verifying that a user or device is who they claim to be before granting access to a system. Common methods include:  
 
-**🔐 Encryption**  
-A method of converting information into code to prevent unauthorized access. Encryption is essential for securing data during storage and transmission.  
-[Learn more on Wikipedia](https://en.wikipedia.org/wiki/Encryption)
+- Passwords  
+- Biometrics (like fingerprints)  
+- Multifactor authentication (MFA)  
 
-**👾 Malware**  
-Short for "malicious software," malware includes programs like viruses, trojans, and ransomware that can harm your computer or steal data.  
-[Learn more on Wikipedia](https://en.wikipedia.org/wiki/Malware)
+**Why it matters:** Authentication is your first line of defense against unauthorized access.  
+[Learn more on Wikipedia](https://en.wikipedia.org/wiki/Authentication)  
 
-**🔒 Multifactor Authentication (MFA)**  
-An additional layer of security that requires more than one method of authentication from independent categories of credentials to verify a user’s identity. Common forms of MFA include using a password along with a fingerprint or a one-time code.  
-[Learn more on Wikipedia](https://en.wikipedia.org/wiki/Multi-factor_authentication)
+---
 
-**🔑 Password Manager**  
-A software application that securely stores and manages a user’s passwords for various online accounts, often using encryption to protect them. Password managers simplify the process of using unique passwords for every account.  
-[Learn more on Wikipedia](https://en.wikipedia.org/wiki/Password_manager)
+### 🛡️ **Cybersecurity**  
 
-**🎣 Phishing**  
-A type of online scam where attackers impersonate legitimate organizations to trick individuals into revealing sensitive information, like passwords or credit card numbers.  
-[Learn more on Wikipedia](https://en.wikipedia.org/wiki/Phishing)
+The art of protecting systems, networks, and data from attacks. Cybersecurity focuses on three key areas:  
 
-**💸 Ransomware**  
-A type of malware that encrypts a victim's files, making them inaccessible until a ransom is paid to the attacker to unlock them. Ransomware attacks are commonly used for financial extortion.  
-[Learn more on Wikipedia](https://en.wikipedia.org/wiki/Ransomware)
+- Confidentiality: Keeping your information private.  
+- Integrity: Ensuring data isn’t altered.  
+- Availability: Making sure your data is accessible when you need it.  
 
-**🔒 Secure Socket Layer (SSL) / Transport Layer Security (TLS)**  
-SSL and TLS are protocols for encrypting data transferred over the internet, providing a secure connection between users and websites. Look for “https” in the URL for sites with SSL/TLS protection.  
-[Learn more on Wikipedia](https://en.wikipedia.org/wiki/Transport_Layer_Security)
+**Why it matters:** Every device and network you use benefits from strong cybersecurity practices.  
+[Learn more on Wikipedia](https://en.wikipedia.org/wiki/Computer_security)  
 
-**🤹 Social Engineering**  
-A manipulation technique that exploits human psychology to trick people into revealing confidential information or performing actions that compromise security. Common examples include phishing and pretexting.  
-[Learn more on Wikipedia](https://en.wikipedia.org/wiki/Social_engineering_(security))
+---
 
-**2️⃣ Two-Factor Authentication (2FA)**  
-A form of multifactor authentication where two separate forms of identification are required to access an account. This typically involves something the user knows (a password) and something they have (like a phone or security token).  
-[Learn more on Wikipedia](https://en.wikipedia.org/wiki/Multi-factor_authentication)
+### 🌐 **Digital Footprint**  
 
-**🌐 Virtual Private Network (VPN)**  
-A service that creates a secure, encrypted connection over the internet, masking your IP address and protecting your data from being intercepted by others. VPNs are often used for privacy and to access restricted content.  
-[Learn more on Wikipedia](https://en.wikipedia.org/wiki/Virtual_private_network)
+The trail of data you leave behind when you go online. This includes:  
 
-**🦠 Virus**  
-A type of malware that attaches itself to legitimate programs and spreads to other programs or devices, often causing harm by corrupting data or system files.  
-[Learn more on Wikipedia](https://en.wikipedia.org/wiki/Computer_virus)
+- Social media posts  
+- Websites you visit  
+- Purchases and subscriptions  
 
-**⚠️ Vulnerability**  
-A weakness in software, hardware, or a network that could be exploited by cyber attackers to gain unauthorized access to information or disrupt system functionality.  
-[Learn more on Wikipedia](https://en.wikipedia.org/wiki/Vulnerability_(computing))
+**Pro Tip:** Use private browsing modes and clear your cookies to minimize your footprint.  
+[Learn more on Wikipedia](https://en.wikipedia.org/wiki/Digital_footprint)  
 
-**📶 Wi-Fi Security**  
-Measures taken to secure a wireless network and prevent unauthorized access, including encryption protocols like WPA2 and WPA3. Proper Wi-Fi security helps protect devices on a home or business network.  
-[Learn more on Wikipedia](https://en.wikipedia.org/wiki/Wireless_security)
+---
 
-**🕵️ Zero-Day Exploit**  
-A cyberattack that occurs on the same day a vulnerability is discovered and before a patch or solution is available, making it especially dangerous.  
-[Learn more on Wikipedia](https://en.wikipedia.org/wiki/Zero-day_(computing))
+### 🔐 **Encryption**  
+
+The practice of scrambling data to make it unreadable without a key. Encryption ensures data stays secure during:  
+
+- File storage  
+- Online communication (look for HTTPS in your browser)  
+
+**Why it matters:** It’s the reason cybercriminals can’t read your messages or steal your credit card info during transactions.  
+[Learn more on Wikipedia](https://en.wikipedia.org/wiki/Encryption)  
+
+---
+
+### 👾 **Malware**  
+
+Short for "malicious software," malware is designed to harm your devices or steal your data. Common types include:  
+
+- Viruses: Infect files and spread.  
+- Ransomware: Locks your files and demands payment.  
+- Spyware: Secretly gathers information.  
+
+**Pro Tip:** Install antivirus software and run regular scans to keep malware at bay.  
+[Learn more on Wikipedia](https://en.wikipedia.org/wiki/Malware)  
+
+---
+
+### 🔒 **Multifactor Authentication (MFA)**  
+
+An extra layer of security that requires two or more steps to verify your identity, such as:  
+
+- A password  
+- A fingerprint or face scan  
+- A one-time code sent to your phone  
+
+**Pro Tip:** Always enable MFA for important accounts like email and banking.  
+[Learn more on Wikipedia](https://en.wikipedia.org/wiki/Multi-factor_authentication)  
+
+---
+
+### 🔑 **Password Manager**  
+
+A tool that securely stores your passwords and generates strong, unique passwords for your accounts.  
+
+- Simplifies login processes.  
+- Ensures you don’t reuse weak passwords.  
+
+**Top Picks:** [Bitwarden](https://bitwarden.com), [1Password](https://1password.com).  
+[Learn more on Wikipedia](https://en.wikipedia.org/wiki/Password_manager)  
+
+---
+
+### 🎣 **Phishing**  
+
+A scam where attackers pose as trusted entities (like your bank) to trick you into revealing sensitive information. Phishing attempts often come through:  
+
+- Email  
+- Text messages  
+- Fake websites  
+
+**How to spot it:** Look for typos, suspicious URLs, and unexpected requests for personal data.  
+[Learn more on Wikipedia](https://en.wikipedia.org/wiki/Phishing)  
+
+---
+
+### 💸 **Ransomware**  
+
+Malware that locks your files and demands payment (a ransom) to release them.  
+**How to avoid it:**  
+
+- Back up your files regularly.  
+- Avoid clicking on unknown links or downloading suspicious attachments.  
+[Learn more on Wikipedia](https://en.wikipedia.org/wiki/Ransomware)  
+
+---
+
+### 🕵️ **Social Engineering**  
+
+A tactic that manipulates people into giving up private information. Examples include:  
+
+- Phishing  
+- Pretexting (creating fake scenarios to gain trust)  
+- Tailgating (following someone into a secure area)  
+
+**Why it matters:** Cybersecurity isn’t just about tech—it’s about people, too.  
+[Learn more on Wikipedia](https://en.wikipedia.org/wiki/Social_engineering_(security))  
+
+---
+
+### 🌐 **Virtual Private Network (VPN)**  
+
+A service that encrypts your internet connection and hides your IP address, making your browsing activity private.  
+**Pro Tip:** Use a VPN when on public Wi-Fi to prevent data interception.  
+[Learn more on Wikipedia](https://en.wikipedia.org/wiki/Virtual_private_network)  
+
+---
+
+### ⚠️ **Vulnerability**  
+
+A weakness in software, hardware, or a network that attackers can exploit.  
+**Pro Tip:** Regular updates and patches fix vulnerabilities before attackers can use them.  
+[Learn more on Wikipedia](https://en.wikipedia.org/wiki/Vulnerability_(computing))  
+
+---
+
+### 📶 **Wi-Fi Security**  
+
+Measures to protect your wireless network, such as:  
+
+- Enabling WPA3 or WPA2 encryption.  
+- Changing default router credentials.  
+- Setting up a guest network for visitors or IoT devices.  
+
+**Why it matters:** A secure network is the foundation of your digital safety.  
+[Learn more on Wikipedia](https://en.wikipedia.org/wiki/Wireless_security)  
+
+---
+
+### 🕵️ **Zero-Day Exploit**  
+
+An attack that targets a software vulnerability unknown to the developer, leaving no time for a fix.  
+**Pro Tip:** Keep software updated to protect against patched exploits.  
+[Learn more on Wikipedia](https://en.wikipedia.org/wiki/Zero-day_(computing))  

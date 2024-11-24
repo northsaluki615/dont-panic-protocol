@@ -1,14 +1,249 @@
-@use "fonts";
-@use "reset";
-@use "layout";
-@use "sitenav";
-@use "typography";
-@use "buttons";
-@use "card";
-@use "prism";
-@use "utilities";
-@use "./_theme.scss" as theme;
+// Variables for Galactic Theme
+$galaxy-blue: #1b1b3a;
+$galaxy-purple: #5e239d;
+$galaxy-pink: #d726d2;
+$galaxy-star-yellow: #f8e71c;
+$galaxy-white: #ffffff;
+$galaxy-shadow: rgba(0, 0, 0, 0.6);
 
-// Primary Colors
-$primary: map-get(theme.$rose, DEFAULT);
-$secondary: map-get(theme.$fandango, DEFAULT);
+$font-family-sans: "Inter", "Arial", sans-serif;
+$font-family-mono: "Fira Code", monospace;
+
+// Base Styles
+body {
+  background: linear-gradient(to bottom, $galaxy-blue, $galaxy-purple 60%, $galaxy-pink);
+  color: $galaxy-white;
+  font-family: $font-family-sans;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family-sans;
+  color: lighten($galaxy-purple, 20%); // Soft luminous purple
+  text-shadow: 0 0 8px $galaxy-blue, 0 0 12px lighten($galaxy-purple, 10%);
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: lighten($galaxy-white, 20%);
+}
+
+a {
+  color: $galaxy-pink;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+
+  &:hover {
+    color: lighten($galaxy-pink, 15%);
+    text-shadow: 0 0 10px lighten($galaxy-pink, 10%);
+  }
+}
+
+// Galactic Container
+.tdbc-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 120ch;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: rgba(27, 27, 58, 0.9);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px $galaxy-shadow;
+}
+
+ul.tdbc-column-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20ch, 1fr)); /* Responsive grid */
+  gap: 2rem; /* Space between grid items */
+  padding: 0;
+  margin: 0;
+  list-style: none; /* Remove bullet points */
+}
+
+li.tdbc-card {
+  background: linear-gradient(to bottom, $galaxy-blue, lighten($galaxy-purple, 10%));
+  color: $galaxy-white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 6px 15px $galaxy-shadow;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+  &:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px $galaxy-shadow;
+  }
+
+  .tdbc-card__title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: lighten($galaxy-pink, 10%);
+    text-decoration: none;
+  }
+
+  .tdbc-card__title:hover {
+    text-decoration: underline;
+    color: lighten($galaxy-star-yellow, 10%);
+  }
+
+  p {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: lighten($galaxy-white, 25%);
+  }
+}
+
+
+// Hero Section
+.tdbc-hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: radial-gradient(circle, $galaxy-purple, $galaxy-blue 80%);
+  border-radius: 16px;
+  box-shadow: 0 8px 20px $galaxy-shadow;
+  color: $galaxy-white;
+
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    color: lighten($galaxy-white, 15%);
+  }
+}
+
+// Starry Background Animation
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: url('https://images.unsplash.com/photo-1538382454-3096c0a5382c') no-repeat center center fixed;
+  background-size: cover;
+  opacity: 0.3;
+}
+
+// Cards
+.tdbc-card {
+  background: linear-gradient(to bottom, $galaxy-blue, lighten($galaxy-purple, 10%));
+  color: $galaxy-white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 6px 15px $galaxy-shadow;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+  &:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px $galaxy-shadow;
+  }
+
+  a {
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: lighten($galaxy-pink, 10%);
+  }
+
+  p {
+    font-size: 1rem;
+    color: lighten($galaxy-white, 25%);
+  }
+}
+
+// Button Styles
+.tdbc-button {
+  display: inline-block;
+  background: $galaxy-pink;
+  color: $galaxy-white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+
+  &:hover {
+    background: lighten($galaxy-pink, 10%);
+    color: $galaxy-blue;
+    transform: scale(1.05);
+  }
+}
+
+// Footer
+footer {
+  text-align: center;
+  padding: 2rem;
+  margin-top: auto;
+  background: $galaxy-purple;
+  color: lighten($galaxy-white, 30%);
+  font-size: 0.875rem;
+
+  a {
+    color: lighten($galaxy-pink, 15%);
+    font-weight: bold;
+  }
+}
+
+/* Navigation Bar Styles */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(27, 27, 58, 0.95); /* Galactic theme background */
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin: 0;
+}
+
+nav a {
+  font-size: 1rem;
+  color: #ffffff; /* Neutral white for links */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: #aaaaff; /* Light blue for hover effect */
+  text-decoration: underline;
+}
+
+
+/* Prevent content from hiding under the fixed navbar */
+main {
+  margin-top: 6rem; /* Adjust based on navbar height */
+}
+
+.task-list-item {
+  list-style: none; /* Removes bullet points */
+  margin: 0.5rem 0;
+}
+
+.task-list-item input[type="checkbox"] {
+  margin-right: 0.5rem; /* Adds spacing between checkbox and text */
+}

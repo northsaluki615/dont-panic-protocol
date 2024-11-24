@@ -5,11 +5,21 @@ templateEngineOverride: md, njk
 
 <style>
   .logo {
-    width: 12vmax;
-    height: 12vmax;
-    margin: 0 auto 2rem;
+    width: 20vmax; /* Adjust this value to shrink or enlarge */
+    height: auto;
+    margin: 0 auto 2rem; /* Centers the logo */
   }
 
+  .logo svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  .logo img {
+    width: 100%; /* Ensures the image scales to the container */
+    height: auto; /* Maintains the aspect ratio */
+    display: block; /* Removes inline spacing issues */
+  }
 
   .tdbc-hero {
     padding-top: 5vh;
@@ -20,103 +30,168 @@ templateEngineOverride: md, njk
   #quickstart + ol li:first-child p {
     font-size: 1.5rem;
   }
+
+  .tdbc-section {
+    margin-bottom: 4rem;
+  }
+
+  .tdbc-topics {
+    background-color: rgba(27, 27, 58, 0.9); /* Galactic theme background */
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .tdbc-topics h2 {
+    color: #f8e71c; /* Star yellow for topic heading */
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .tdbc-topics ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20ch, 1fr));
+    gap: 2rem;
+    list-style: none;
+    padding: 0;
+  }
+
+  .tdbc-topics li {
+    background: linear-gradient(to bottom, #1b1b3a, lighten(#5e239d, 10%));
+    color: #ffffff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+
+  .tdbc-topics li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+  }
+
+  .tdbc-topics a {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #f8e71c; /* Star yellow for topic links */
+    text-decoration: none;
+  }
+
+  .tdbc-topics a:hover {
+    text-decoration: underline;
+    color: lighten(#f8e71c, 10%);
+  }
 </style>
 
 <header class="tdbc-hero">
   <div class="tdbc-container">
-    <span class="logo">
-      <svg
-        viewBox="0 0 800 800"
-        xmlns="http://www.w3.org/2000/svg"
-        aria-hidden="true"
-        focusable="false"
-      >
-        <!-- SVG content omitted for brevity -->
-      </svg>
-    </span>
-    <h1 class="tdbc-ink--primary tdbc-mb-none">{{ meta.siteName }}</h1>
+    <h1 class="tdbc-ink--primary tdbc-mb-none">{{ meta.siteName | safe }}</h1>
     <h2 class="tdbc-lead tdbc-content-maxlength tdbc-ink--gray tdbc-mt-md tdbc-mx-auto">
       {{ meta.siteDescription }}
     </h2>
+    <div class="logo">
+      <img src="/dpp-logo.svg" alt="Don't Panic Protocol Logo" />
+    </div>
   </div>
 </header>
+
 <main class="tdbc-container">
+  <!-- Table for Non-Topics Pages -->
   <div class="tdbc-section">
+    <ul class="tdbc-column-container">
+      {%- for page in collections.pages -%}
+      <li class="tdbc-card">
+        <div class="tdbc-card__content">
+          <a href="{{ page.url }}" class="tdbc-card__title">{{ page.data.title }}</a>
+          <p>{{ page.data.description }}</p>
+        </div>
+      </li>
+      {%- endfor -%}
+    </ul>
+  </div>
 
-# 🚀 Welcome to The Don’t Panic Protocol
+# **🚀 Welcome to The Don’t Panic Protocol**  
 
-## 🔒 Cybersecurity Simplified  
+## 🔒 **Your Guide to Stress-Free Cybersecurity**  
 
-Hi there! I’m Mike, the developer behind **The Don’t Panic Protocol**, your trusted guide to securing your digital life. In a world where cyber threats feel as unavoidable as taxes, this project is here to make cybersecurity simple, effective, and—dare I say it—fun.  
+Welcome to **The Don’t Panic Protocol**, your go-to resource for mastering the art of cybersecurity without the stress. 🌐 In a world filled with online threats, it’s easy to feel overwhelmed—but protecting yourself doesn’t have to be complicated.  
 
----
-
-## 📋 What’s This All About?  
-
-The Don’t Panic Protocol is a beginner-friendly cybersecurity guide designed for home users, small businesses, and anyone feeling overwhelmed by digital safety. Launching **November 24, 2024**, this site will feature:  
-- **Step-by-step guides** to keep your accounts safe.  
-- **Articles** breaking down key security concepts.  
-- **Regular updates** to stay ahead of emerging threats.  
-
----
-
-## 🛡️ Your Mission (Should You Choose to Accept It)  
-
-Here’s how to get started:  
-
-1. **Take Inventory**  
-   Write down all your accounts, subscriptions, and devices. Understanding your “digital footprint” is step one in protecting it.  
-
-2. **Gather Passwords**  
-   Use a secure password manager (like [Bitwarden](https://bitwarden.com)) to store, organize, and generate strong passwords.  
+This site is all about making cybersecurity simple, accessible, and actionable for everyone, whether you’re a total beginner or looking to sharpen your digital defenses. Ready to take control of your digital safety? Let’s get started!  
 
 ---
 
-## 🌟 The Protocol: Cybersecurity Made Easy  
+## **📋 What Is the Don’t Panic Protocol?**  
 
-### 1️⃣ Step 1: Fortify Your Passwords  
-- Use **long, random, and unique** passwords for every account.  
-- Password managers make this easy and secure.  
+The Don’t Panic Protocol is a comprehensive framework designed to help you protect your online life with ease. From securing personal devices to safeguarding your home network, this site provides:  
 
-### 2️⃣ Step 2: Turn on Multifactor Authentication (MFA)  
-- MFA adds a second layer of protection to your accounts.  
-- Learn how to set it up [here](https://dontpanicprotocol.org/mfa).  
+- **Step-by-step guides** for every aspect of digital security.  
+- **Checklists** to track your progress and ensure you’re covering all bases.  
+- **Tools and tips** to simplify tricky concepts like encryption, secure messaging, and IoT safety.  
+- **Regular updates** to keep you informed about emerging threats and solutions.  
 
-### 3️⃣ Step 3: Stay Vigilant Against Phishing  
-- Watch for suspicious emails and links.  
-- Report and delete anything questionable.  
-
-### 4️⃣ Step 4: Update Your Software  
-- Turn on automatic updates for your devices and apps.  
-
-### 5️⃣ Step 5: Secure Your Smart Devices  
-- Change default passwords.  
-- Use a separate network for IoT devices.  
+No matter your starting point, we’ll help you take actionable steps to make your digital world safer—without feeling overwhelmed.  
 
 ---
 
-## 🌌 What’s Next?  
+## **🔗 Explore the Protocol**  
 
-The digital universe is always expanding, and so is The Don’t Panic Protocol. We’ll keep adding resources, so check back often to stay ahead of the latest security trends.  
+Cybersecurity covers a lot of ground, so we’ve broken it into focused sections. Click below to explore each topic:  
+
+- 🔐 [Authentication](https://dontpanicprotocol.org/authentication)  
+Learn how to strengthen your digital locks with secure passwords, multifactor authentication, and password managers.  
+- 🌐 [Web Browsing](https://dontpanicprotocol.org/web-browsing)  
+Browse the internet safely with privacy-focused tools, ad blockers, and secure browser settings.  
+- 🔄 [Ongoing Maintenance](https://dontpanicprotocol.org/ongoing-maintenance)  
+Keep your defenses strong with regular updates, backups, and monitoring for unusual activity.  
+- 🌐 [Networks](https://dontpanicprotocol.org/networks)  
+Protect your home network with strong router settings, guest networks, and VPNs.  
+- 🌐 [Internet of Things (IoT)](https://dontpanicprotocol.org/iot)  
+Secure smart devices like cameras, doorbells, and thermostats to keep hackers out of your home.  
+- 📱 [Personal Devices](https://dontpanicprotocol.org/personal-devices)  
+Protect your smartphones, laptops, and tablets with encryption, antivirus tools, and safe app practices.  
+- 🔒 [Physical Security](https://dontpanicprotocol.org/physical-security)  
+Combine physical and digital security to safeguard your devices and workspaces.  
+- 📩 [Secure Messaging](https://dontpanicprotocol.org/secure-messaging)  
+Ensure private conversations with encrypted messaging apps and disappearing messages.  
+- 📣 [Social Media](https://dontpanicprotocol.org/social-media)  
+Control your digital footprint by adjusting privacy settings and sharing wisely.  
 
 ---
 
-## 📖 Learn More  
+## **💡 Why It Matters**  
 
-Want the full details? Visit our **[FAQ page](https://dontpanicprotocol.org/faq)** or explore guides on topics like:  
-- Creating unbreakable passwords.  
-- Spotting phishing scams.  
-- Securing your home network.  
+Cybersecurity isn’t just for techies—it’s for everyone. From protecting your personal information to staying safe on social media, these practices empower you to navigate the online world with confidence.  
 
----
-
-## ❓ Questions?  
-
-I’m here to help! Reach out anytime at [helmmp15@uwgb.edu](mailto:helmmp15@uwgb.edu). Together, we’ll make cybersecurity a simple part of your routine.  
-
-**Stay safe, stay curious, and don’t panic.** 💪  
+Whether it’s avoiding phishing scams, securing your home network, or keeping your messages private, The Don’t Panic Protocol is here to guide you every step of the way.  
 
 ---
 
-</div>
+## **📖 Have Questions?**  
+
+Got a question about digital security? Check out our **[FAQ page](https://dontpanicprotocol.org/faq)** for answers to common concerns. If you don’t see your question there, feel free to reach out to me directly at [helmmp15@uwgb.edu](mailto:helmmp15@uwgb.edu)—I’m happy to help!  
+
+---
+
+## **🌟 Stay Connected**  
+
+Cybersecurity is always evolving, and so is The Don’t Panic Protocol. Bookmark **[dontpanicprotocol.org](https://dontpanicprotocol.org)** and check back often for new guides, tips, and resources to keep you secure in an ever-changing digital world.  
+
+Let’s take the stress out of staying safe online—together. 💪 
+
+  ---
+
+  <!-- Table for Topics Pages -->
+  <div class="tdbc-section tdbc-topics">
+    <h2>Explore Topics</h2>
+    <ul>
+      {%- for topic in collections.topics -%}
+      <li>
+        <a href="{{ topic.url }}">{{ topic.data.title }}</a>
+        <p>{{ topic.data.description }}</p>
+      </li>
+      {%- endfor -%}
+    </ul>
+  </div>
+
 </main>
